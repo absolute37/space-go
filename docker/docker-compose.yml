@@ -1,0 +1,10 @@
+version: "3"
+services:
+  database:
+    build: ./database
+    container_name: database
+    environment:
+      SA_PASSWORD: "reallyStrongPwd123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
